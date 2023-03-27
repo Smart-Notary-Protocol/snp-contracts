@@ -1,0 +1,854 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/RuleExample.sol": {
+      "lastModificationDate": 1674928737735,
+      "contentHash": "22e0f62a6033cb84c514cee4d866d1b7",
+      "sourceName": "contracts/RuleExample.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRuleInterface.sol",
+        "./SmartNotary.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "RuleExample"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/SmartNotary.sol": {
+      "lastModificationDate": 1674930887096,
+      "contentHash": "3a696ab6fad85f59d13727c2cef66ad7",
+      "sourceName": "contracts/SmartNotary.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./lib/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol",
+        "./SmartClient.sol",
+        "./RuleModule.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SmartNotary"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/interfaces/IRuleInterface.sol": {
+      "lastModificationDate": 1674928721242,
+      "contentHash": "6bee22553b3378e63d4db4b12b9410e8",
+      "sourceName": "contracts/interfaces/IRuleInterface.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../structs/Structs.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IRuleInterface"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol": {
+      "lastModificationDate": 1674660494314,
+      "contentHash": "2503399e07b63fe4c965fe25f1e8914e",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "BigIntCBOR"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/RuleModule.sol": {
+      "lastModificationDate": 1674930795052,
+      "contentHash": "7ee778ccd0178f5640f95e369f2ded49",
+      "sourceName": "contracts/RuleModule.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRuleInterface.sol",
+        "./structs/Structs.sol",
+        "./RuleExample.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RuleModule"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/SmartClient.sol": {
+      "lastModificationDate": 1674930905521,
+      "contentHash": "46289171fb36be0c776c5666003211a5",
+      "sourceName": "contracts/SmartClient.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./lib/filecoin-solidity/contracts/v0.8/DataCapAPI.sol",
+        "./lib/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol",
+        "./SmartNotary.sol",
+        "./structs/Structs.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SmartClient"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/structs/Structs.sol": {
+      "lastModificationDate": 1674928711132,
+      "contentHash": "6c6f965d8353994c0b58342c00a07a8f",
+      "sourceName": "contracts/structs/Structs.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/DataCapAPI.sol": {
+      "lastModificationDate": 1674660494259,
+      "contentHash": "dddd5656947cb58ad3747e30f620606f",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/DataCapAPI.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./types/DataCapTypes.sol",
+        "./cbor/DataCapCbor.sol",
+        "./cbor/BigIntCbor.sol",
+        "./cbor/BytesCbor.sol",
+        "./utils/Actor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "DataCapAPI"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/types/DataCapTypes.sol": {
+      "lastModificationDate": 1674660378794,
+      "contentHash": "f4dfc0bda6a0876621295885d0e9e5f8",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/types/DataCapTypes.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../cbor/BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "DataCapTypes"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/cbor/DataCapCbor.sol": {
+      "lastModificationDate": 1674660494314,
+      "contentHash": "68c63e29562b298661d38d6165798ee3",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/cbor/DataCapCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "../types/CommonTypes.sol",
+        "../types/DataCapTypes.sol",
+        "../utils/CborDecode.sol",
+        "../utils/Misc.sol",
+        "./BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "BurnCBOR",
+        "BurnFromCBOR",
+        "DecreaseAllowanceCBOR",
+        "GetAllowanceCBOR",
+        "IncreaseAllowanceCBOR",
+        "RevokeAllowanceCBOR",
+        "TransferCBOR",
+        "TransferFromCBOR"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/cbor/BytesCbor.sol": {
+      "lastModificationDate": 1674660494279,
+      "contentHash": "03a0d0cada746a0fc78b908f2f6242bb",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/cbor/BytesCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "../utils/CborDecode.sol",
+        "./BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "BytesCBOR"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/utils/Actor.sol": {
+      "lastModificationDate": 1674660494259,
+      "contentHash": "8adecc563d913083e076f7b1facff419",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/utils/Actor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./Misc.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "Actor"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol": {
+      "lastModificationDate": 1674660377486,
+      "contentHash": "14ddc34e5f9224c935d07ceac916bdaf",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../cbor/BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "CommonTypes"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/utils/CborDecode.sol": {
+      "lastModificationDate": 1674660494313,
+      "contentHash": "898ac6bc37635bd1e241e9f6d14fe9fd",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/utils/CborDecode.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "CBORDecoder"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/contracts/lib/filecoin-solidity/contracts/v0.8/utils/Misc.sol": {
+      "lastModificationDate": 1674660494259,
+      "contentHash": "46e8d6f27276941e3e7449d102099477",
+      "sourceName": "contracts/lib/filecoin-solidity/contracts/v0.8/utils/Misc.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.25 <=0.8.17"
+      ],
+      "artifacts": [
+        "Misc"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/node_modules/solidity-cborutils/contracts/CBOR.sol": {
+      "lastModificationDate": 1674930603030,
+      "contentHash": "f6fe9c5e14ab5496490b8d36007fdffd",
+      "sourceName": "solidity-cborutils/contracts/CBOR.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CBOR"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/node_modules/@ensdomains/buffer/contracts/Buffer.sol": {
+      "lastModificationDate": 1674930600914,
+      "contentHash": "d3d00f20f206848f1e90d596ebcc557b",
+      "sourceName": "@ensdomains/buffer/contracts/Buffer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Buffer"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1674930601168,
+      "contentHash": "396031251978f8febfd90cb62cb240ec",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/fabri/hackathon/space-warp/FVM-Smart-Notary/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1674930603585,
+      "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    }
+  }
+}
