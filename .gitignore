@@ -1,4 +1,7 @@
 node_modules
 artifacts
 .DS_Store
+.env
+deployments
 cache
+cache/solidity-files-cache.json
